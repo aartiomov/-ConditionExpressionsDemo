@@ -196,6 +196,7 @@
     <Compile Include="Core\PredicateBuilder.cs" />
     <Compile Include="Core\ReflectionUtility.cs" />
     <Compile Include="Core\TreeExtension.cs" />
+    <Compile Include="Domain\Model\Person.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
