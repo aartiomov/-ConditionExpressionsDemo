@@ -1,0 +1,16 @@
+﻿[
+    {
+        "FirstName": "Ana",
+        "LastName": "Thompson",
+        "BirthDate": "1981-10-02",
+        "OrdersCount": 10,
+        "Gender": "female"
+    },
+    {
+        "FirstName": "John",
+        "LastName": "Stevens",
+        "BirthDate": "1990-01-02",
+        "OrdersCount": 5,
+        "Gender": "male"
+    }
+]
