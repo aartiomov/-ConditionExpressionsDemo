@@ -11,7 +11,7 @@ namespace DynamicExpressionsSample.Conditions
         public ConditionOrdersIs()
             : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.OrdersCount))
         {
-            Value = "25";
+            Value = "1";
         }
     }
 }
