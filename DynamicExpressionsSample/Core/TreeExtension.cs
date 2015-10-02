@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace DynamicExpressionsSample.Core
 {
+    /// <summary>
+    /// Helper class
+    /// </summary>
     public static class TreeExtension
     {
         public static IEnumerable<T> Traverse<T>(this T node, Func<T, IEnumerable<T>> childrenFor)

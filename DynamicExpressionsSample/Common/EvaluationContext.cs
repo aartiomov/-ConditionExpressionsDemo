@@ -17,15 +17,15 @@ namespace DynamicExpressionsSample.Common
 
         protected IDictionary<string, string> Attributes { get; set; }
 
-        public virtual int ShopperAge { get; set; }
+        public virtual int CustomerAge { get; set; }
 
-        public virtual string ShopperGender { get; set; }
+        public virtual string CustomerGender { get; set; }
 
         public virtual string FirstName { get; set; }
 
         public virtual string LastName { get; set; }
 
-        public virtual int ShopperOrders { get; set; }
+        public virtual int OrdersCount { get; set; }
                 
     }
 }

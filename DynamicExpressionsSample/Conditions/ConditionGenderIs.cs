@@ -9,7 +9,7 @@ namespace DynamicExpressionsSample.Conditions
     public class ConditionGenderIs : MatchedConditionBase<EvaluationContext>
     {
         public ConditionGenderIs()
-            : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.ShopperGender))
+            : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.CustomerGender))
         {
             Value = "female";
         }

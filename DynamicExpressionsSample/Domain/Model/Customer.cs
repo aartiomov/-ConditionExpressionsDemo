@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace DynamicExpressionsSample.Domain.Model
 {
+    /// <summary>
+    /// Customer model class
+    /// </summary>
     public class Customer
     {
         public string FirstName { get; set; }
