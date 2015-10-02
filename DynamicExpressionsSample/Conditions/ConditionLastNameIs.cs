@@ -4,10 +4,10 @@ using DynamicExpressionsSample.Core;
 namespace DynamicExpressionsSample.Conditions
 {
     //Shopper last name []
-    public class ConditionLastNameIs : MatchedConditionBase<EvaluationContextBase>
+    public class ConditionLastNameIs : MatchedConditionBase<EvaluationContext>
     {
         public ConditionLastNameIs()
-            : base(ReflectionUtility.GetPropertyName<EvaluationContextBase>(x => x.LastName))
+            : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.LastName))
         {
         }
     }

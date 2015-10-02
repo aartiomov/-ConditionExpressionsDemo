@@ -179,7 +179,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Common\ConditionExpressionTree.cs" />
     <Compile Include="Common\DynamicExpression.cs" />
-    <Compile Include="Common\EvaluationContextBase.cs" />
+    <Compile Include="Common\EvaluationContext.cs" />
     <Compile Include="Common\IConditionExpression.cs" />
     <Compile Include="Common\IDynamicExpression.cs" />
     <Compile Include="Common\IEvaluationContext.cs" />

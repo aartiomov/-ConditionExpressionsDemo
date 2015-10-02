@@ -6,10 +6,10 @@ using DynamicExpressionsSample.Core;
 namespace DynamicExpressionsSample.Conditions
 {
     //Age is []
-    public class ConditionAgeIs : CompareConditionBase<EvaluationContextBase>
+    public class ConditionAgeIs : CompareConditionBase<EvaluationContext>
     {
         public ConditionAgeIs()
-            : base(ReflectionUtility.GetPropertyName<EvaluationContextBase>(x => x.ShopperAge))
+            : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.ShopperAge))
         {
             Value = "25";
         }
