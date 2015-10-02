@@ -3,7 +3,9 @@ using DynamicExpressionsSample.Core;
 
 namespace DynamicExpressionsSample.Conditions
 {
-    //Shopper gender is []
+    /// <summary>
+    /// Condition to set gender check
+    /// </summary>
     public class ConditionGenderIs : MatchedConditionBase<EvaluationContext>
     {
         public ConditionGenderIs()

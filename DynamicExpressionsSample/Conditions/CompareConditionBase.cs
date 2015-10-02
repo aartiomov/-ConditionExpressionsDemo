@@ -4,6 +4,10 @@ using linq = System.Linq.Expressions;
 
 namespace DynamicExpressionsSample.Conditions
 {
+    /// <summary>
+    /// Base class to create decimal values comparing conditions
+    /// </summary>
+    /// <typeparam name="T">Context of IEvaluationContext interface</typeparam>
     public abstract class CompareConditionBase<T> : DynamicExpression, IConditionExpression where T : IEvaluationContext
     {
         public string Value { get; set; }

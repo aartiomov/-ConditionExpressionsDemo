@@ -3,7 +3,9 @@ using DynamicExpressionsSample.Core;
 
 namespace DynamicExpressionsSample.Conditions
 {
-    //Shopper first name []
+    /// <summary>
+    /// Condition to set name of the customer check
+    /// </summary>
     public class ConditionFirstNameIs : MatchedConditionBase<EvaluationContext>
     {
         public ConditionFirstNameIs()
