@@ -1,32 +1,27 @@
-html
-{
+html {
     height: 100%;
 }
 
-body
-{
+body {
     font-family: 'Exo 2';
     height: 100%;
     margin: 0;
 }
 
-a
-{
+a {
     color: #43b0e6;
     cursor: pointer;
     font-size: 14px;
     text-decoration: none;
 }
 
-ul
-{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.button
-{
+.button {
     background: #43b0e6;
     border: none;
     color: #fff;
@@ -39,8 +34,7 @@ ul
 }
 
 .list .list-item,
-.menu .menu-item
-{
+.menu .menu-item {
     padding-bottom: 0;
     padding-left: 0;
     padding-top: 0;
@@ -48,8 +42,7 @@ ul
 }
 
 .form-input input,
-.form-input select
-{
+.form-input select {
     color: #4c4c4c;
     font-family: inherit;
     font-size: 13px;
@@ -57,115 +50,97 @@ ul
     padding: 5px 10px;
     vertical-align: top;
     width: 100%;
-
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.form-input input
-{
+.form-input input {
     background: none;
     border: 1px solid #dee9f0;
 }
 
-.form-input select
-{
+.form-input select {
     padding: 0 5px;
 }
 
-.form-input.__mini
-{
+.form-input.__mini {
     width: 90px;
 }
 
 .left,
-.right
-{
+.right {
     bottom: 0;
     padding: 0 30px;
     position: absolute;
     text-align: center;
     top: 0;
     width: 50%;
-
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.left::after,
-.right::after
-{
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
+    .left::after,
+    .right::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
 
-.left
-{
+.left {
     border-right: 1px solid #ccc;
     left: 0;
 }
 
-.right
-{
+.right {
     left: 50%;
 }
 
-.table-wrap
-{
+.table-wrap {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
 }
 
-.table-wrap table
-{
-    border-spacing: 0;
-    padding: 0;
-    width: 100%;
-}
+    .table-wrap table {
+        border-spacing: 0;
+        padding: 0;
+        width: 100%;
+    }
 
-.table-wrap td,
-.table-wrap th
-{
-    font-size: 14px;
-    padding: 5px;
-    text-align: left;
-}
+    .table-wrap td,
+    .table-wrap th {
+        font-size: 14px;
+        padding: 5px;
+        text-align: left;
+    }
 
-.table-wrap th
-{
-    background: #99c27a;
-    color: #fff;
-    font-weight: 400;
-}
+    .table-wrap th {
+        background: #99c27a;
+        color: #fff;
+        font-weight: 400;
+    }
 
-.table-wrap td
-{
-    border-top: 1px solid #eee;
-    color: #666;
-}
+    .table-wrap td {
+        border-top: 1px solid #eee;
+        color: #666;
+    }
 
-.table-wrap tr
-{
-    background: #fff;
-}
+    .table-wrap tr {
+        background: #fff;
+    }
 
-.table-wrap tr:nth-child(2n)
-{
-    background: #f9f9f9;
-}
+        .table-wrap tr:nth-child(2n) {
+            background: #f9f9f9;
+        }
 
-.dynamic-expression
-{
+.dynamic-expression {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
 }
 
-    .dynamic-expression .error
-    {
+    .dynamic-expression .error {
         color: #e51400;
         display: block;
         font-size: 12px;
@@ -173,70 +148,115 @@ ul
         padding: 5px 0;
     }
 
-    .dynamic-expression .dynamic-expression_t
-    {
+    .dynamic-expression .dynamic-expression_t {
         display: inline-block;
         margin: 15px 0;
     }
 
-    .dynamic-expression .dynamic-expression_b
-    {
+    .dynamic-expression .dynamic-expression_b {
         margin: 15px 0 30px;
         padding: 0 0 0 40px;
     }
 
-    .dynamic-expression_b .add
-    {
-        font-size: 12px;
+.dynamic-expression_b .add {
+    font-size: 12px;
+}
+
+.dynamic-expression_b .list-item {
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.dynamic-expression_b .list-link {
+    color: #4c4c4c;
+}
+
+.dynamic-expression_b .list-ico {
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+
+.dynamic-expression_b .form-input,
+.dynamic-expression_b .list-ico,
+.dynamic-expression_b .list-descr,
+.dynamic-expression_b .link {
+    display: inline-block;
+}
+
+.dynamic-expression_b .form-input {
+    vertical-align: middle;
+}
+
+.dynamic-expression_b .form-input,
+.dynamic-expression_b .list-descr {
+    margin: 0 10px;
+}
+
+.dynamic-expression_b .form-group {
+    margin: 10px 0 0;
+}
+
+.dynamic-expression_b .list-descr {
+    margin: 0;
+}
+
+.dynamic-expression_b .list.__sub {
+    padding: 15px 0 0 20px;
+}
+
+.menu.__context {
+    background: #333;
+    display: none;
+    position: fixed;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+    .menu.__context.open,
+    .menu.__context.__open {
+        display: block;
     }
 
-    .dynamic-expression_b .list-item
-    {
-        font-size: 14px;
-        margin: 0 0 15px;
+    .menu.__context .menu-item {
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Exo 2';
+        font-size: 13px;
+        padding: 5px 20px;
+        position: relative;
+        text-align: left;
+        text-shadow: none;
+        white-space: nowrap;
     }
 
-        .dynamic-expression_b .list-link
-        {
-            color: #4c4c4c;
+        .menu.__context .menu-item.__right {
+            padding: 5px 40px 5px 20px;
         }
 
-        .dynamic-expression_b .list-ico
-        {
-            cursor: pointer;
-            margin: 0 5px 0 0;
+        .menu.__context .menu-item:hover {
+            color: #43b0e6;
         }
 
-        .dynamic-expression_b .form-input,
-        .dynamic-expression_b .list-ico,
-        .dynamic-expression_b .list-descr,
-        .dynamic-expression_b .link
-        {
-            display: inline-block;
-        }
+    .menu.__context .menu-ico {
+        font-size: 18px;
+        width: 25px;
+    }
 
-        .dynamic-expression_b .form-input
-        {
-            vertical-align: middle;
-        }
+    .menu.__context .menu-item.__right .menu-ico {
+        position: absolute;
+        right: 20px;
+        width: 6px;
+    }
 
-        .dynamic-expression_b .form-input,
-        .dynamic-expression_b .list-descr
-        {
-            margin: 0 10px;
-        }
+    .menu.__context .menu.__sub {
+        background: #333;
+        display: none;
+        left: 100%;
+        padding: 10px 0;
+        position: absolute;
+        top: -10px;
+    }
 
-        .dynamic-expression_b .form-group
-        {
-            margin: 10px 0 0;
-        }
-
-        .dynamic-expression_b .list-descr
-        {
-            margin: 0;
-        }
-
-        .dynamic-expression_b .list.__sub
-        {
-            padding: 15px 0 0 20px;
-        }
+    .menu.__context .menu-item:hover .menu.__sub {
+        display: block;
+    }

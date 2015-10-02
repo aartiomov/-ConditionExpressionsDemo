@@ -1,5 +1,6 @@
 ﻿var AppDependencies = [
-'ngResource'
+'ngResource',
+'ng-context-menu',
 ];
 
 angular.module('dynamicTreeDemoApp', AppDependencies)

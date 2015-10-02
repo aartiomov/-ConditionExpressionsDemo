@@ -158,8 +158,12 @@
   <ItemGroup>
     <Content Include="bower_components\angular-resource\angular-resource.js" />
     <Content Include="bower_components\angular\angular.js" />
+    <Content Include="bower_components\ng-context-menu\dist\ng-context-menu.min.js" />
+    <Content Include="bower_components\underscore\underscore-min.js" />
+    <Content Include="Scripts\common\filters.js" />
+    <Content Include="Scripts\common\left-click-menu.js" />
     <Content Include="Scripts\tree\expression-tree.tpl.html" />
-    <Content Include="Content\all-templates.html" />
+    <Content Include="Scripts\all-templates.html" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\main.css" />
@@ -179,7 +183,7 @@
     <Content Include="Scripts\tree\expression-directives.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\dynamicExpression.js" />
-    <Content Include="Scripts\dynamicTree.js" />
+    <Content Include="Scripts\dynamicTreeClientController.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

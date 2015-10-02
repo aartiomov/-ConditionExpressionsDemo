@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "angular": "1.4.7",
-    "angular-resource": "1.4.7"
+    "angular-resource": "1.4.7",
+    "ng-context-menu": "1.0.1",
+    "underscore": "1.8.3"
   }
 }

@@ -27,10 +27,10 @@ angular.module(moduleName, [])
         //},
         link: function ($scope, $element, $attrs) {
             $scope.addChild = function (chosenMenuElement, parentBlock) {
-                if (!parentBlock.children) {
-                    parentBlock.children = [];
+                if (!parentBlock.Children) {
+                    parentBlock.Children = [];
                 }
-                parentBlock.children.push(angular.copy(chosenMenuElement));
+                parentBlock.Children.push(angular.copy(chosenMenuElement));
             };
             $scope.deleteChild = function (child, parentList) {
                 parentList.splice(parentList.indexOf(child), 1);

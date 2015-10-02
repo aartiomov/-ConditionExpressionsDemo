@@ -13,59 +13,16 @@
         <script src="Scripts/app.js"></script>
         <script src="Scripts/tree/expression-directives.js"></script>
         <script src="Scripts/dynamicExpression.js"></script>
-        <script src="Scripts/dynamicTree.js"></script>
+        <script src="Scripts/dynamicTreeClientController.js"></script>
+        <script src="bower_components/underscore/underscore-min.js"></script>
+        <script src="bower_components/ng-context-menu/dist/ng-context-menu.min.js"></script>
+        <script src="Scripts/common/filters.js"></script>
+        <script src="Scripts/common/left-click-menu.js"></script>
 	</head>
-	<body ng-controller="dynamicTreeCtrl">
+	<body ng-controller="dynamicTreeClientCtrl">
 		<div class="left">
 			<div class="dynamic-expression">
                 <va-dynamic-expression-tree source="dynamicExpression"></va-dynamic-expression-tree>
-	            <!--<div class="dynamic-expression_t">Construct dynamic expression to filter customers</div>
-	            <div class="dynamic-expression_b">
-	                <ul class="list">
-	                    <li class="list-item">
-	                        <i class="list-ico fa fa-times-circle"></i>
-	                        <div class="list-descr">
-	                        	Меня зовут
-	                        </div>
-	                        <div class="form-input __mini">
-	                        	<input type="text" value="Вася">
-	                        </div>
-	                    </li>
-	                    <li class="list-item">
-	                    	<i class="list-ico fa fa-times-circle"></i>
-	                    	<div class="list-descr">Фамилия</div>
-	                        <div class="form-input __mini">
-	                        	<input type="text" value="Пупкин">
-	                        </div>
-	                    </li>
-	                    <li class="list-item">
-	                    	<i class="list-ico fa fa-times-circle"></i>
-	                        <div class="list-descr">Дата рождения</div>
-	                        <div class="form-input __mini">
-	                        	<input type="text" value="06.06.1990">
-	                        </div>
-	                	</li>
-	                	<li class="list-item">
-	                    	<i class="list-ico fa fa-times-circle"></i>
-	                        <div class="list-descr">Пол</div>
-	                        <div class="form-input __mini">
-	                        	<select>
-	                        		<option>Женский</option>
-	                        		<option selected>Мужской</option>
-	                        	</select>
-	                        </div>
-	                	</li>
-	                	<li class="list-item">
-	                		<i class="list-ico fa fa-times-circle"></i>
-	                		<div class="list-descr">Количество заказов</div>
-	                        <a class="link">больше</a>
-	                        <div class="form-input __mini">
-	                        	<input type="text" value="5">
-	                        </div>
-	                	</li>
-	                </ul>
-	                <a class="add __link __usergroup">Add usergroup</a>	                
-	            </div>-->
                 <button class="button" ng-click="refresh()">Test expression!</button>
 	        </div>			
 		</div>
