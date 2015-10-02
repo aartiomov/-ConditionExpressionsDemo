@@ -191,12 +191,13 @@
     <Compile Include="Conditions\ConditionGenderIs.cs" />
     <Compile Include="Conditions\MatchedConditionBase.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Core\PredicateBuilder.cs" />
     <Compile Include="Core\ReflectionUtility.cs" />
     <Compile Include="Core\TreeExtension.cs" />
-    <Compile Include="Domain\Model\Person.cs" />
+    <Compile Include="Domain\Model\Customer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +216,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="customers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
