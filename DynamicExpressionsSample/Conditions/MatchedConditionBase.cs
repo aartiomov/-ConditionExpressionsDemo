@@ -5,6 +5,10 @@ using linq = System.Linq.Expressions;
 
 namespace DynamicExpressionsSample.Conditions
 {
+    /// <summary>
+    /// Base class to create string type comparing conditions
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class MatchedConditionBase<T> : DynamicExpression, IConditionExpression where T : IEvaluationContext
     {
         public string Value { get; set; }

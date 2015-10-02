@@ -7,6 +7,9 @@ using System.Reflection;
 
 namespace DynamicExpressionsSample.Core
 {
+    /// <summary>
+    /// Helpers
+    /// </summary>
     public static class ReflectionUtility
     {
         public static IEnumerable<string> GetPropertyNames<T>(params Expression<Func<T, object>>[] propertyExpressions)

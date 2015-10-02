@@ -138,6 +138,7 @@
     <Compile Include="Common\IEvaluationContext.cs" />
     <Compile Include="Conditions\BlockConditionAndOr.cs" />
     <Compile Include="Conditions\CompareConditionBase.cs" />
+    <Compile Include="Conditions\ConditionOrdersIs.cs" />
     <Compile Include="Conditions\ConditionAgeIs.cs" />
     <Compile Include="Conditions\ConditionLastNameIs.cs" />
     <Compile Include="Conditions\ConditionFirstNameIs.cs" />

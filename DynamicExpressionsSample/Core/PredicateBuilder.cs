@@ -4,6 +4,9 @@ using System.Linq.Expressions;
 
 namespace DynamicExpressionsSample.Core
 {
+    /// <summary>
+    /// Predicate builder class. More on PredicateBuilder read: http://www.albahari.com/nutshell/predicatebuilder.aspx
+    /// </summary>
     public static class PredicateBuilder
     {
         public static Expression<Func<T, bool>> True<T>() { return f => true; }

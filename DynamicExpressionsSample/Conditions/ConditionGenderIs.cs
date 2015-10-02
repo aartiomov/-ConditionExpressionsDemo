@@ -3,11 +3,13 @@ using DynamicExpressionsSample.Core;
 
 namespace DynamicExpressionsSample.Conditions
 {
-    //Shopper gender is []
+    /// <summary>
+    /// Condition to set gender check
+    /// </summary>
     public class ConditionGenderIs : MatchedConditionBase<EvaluationContext>
     {
         public ConditionGenderIs()
-            : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.ShopperGender))
+            : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.CustomerGender))
         {
             Value = "female";
         }
