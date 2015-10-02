@@ -8,7 +8,6 @@ namespace DynamicExpressionsSample
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
         }
     }
 }
