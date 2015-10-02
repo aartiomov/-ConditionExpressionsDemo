@@ -1,0 +1,242 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Exo 2';
+    height: 100%;
+    margin: 0;
+}
+
+a
+{
+    color: #43b0e6;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button
+{
+    background: #43b0e6;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'Exo 2';
+    height: 30px;
+    margin: 10px 0 0;
+    min-width: 100px;
+}
+
+.list .list-item,
+.menu .menu-item
+{
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    text-indent: 0;
+}
+
+.form-input input,
+.form-input select
+{
+    color: #4c4c4c;
+    font-family: inherit;
+    font-size: 13px;
+    height: 34px;
+    padding: 5px 10px;
+    vertical-align: top;
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.form-input input
+{
+    background: none;
+    border: 1px solid #dee9f0;
+}
+
+.form-input select
+{
+    padding: 0 5px;
+}
+
+.form-input.__mini
+{
+    width: 90px;
+}
+
+.left,
+.right
+{
+    bottom: 0;
+    padding: 0 30px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 50%;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.left::after,
+.right::after
+{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.left
+{
+    border-right: 1px solid #ccc;
+    left: 0;
+}
+
+.right
+{
+    left: 50%;
+}
+
+.table-wrap
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.table-wrap table
+{
+    border-spacing: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.table-wrap td,
+.table-wrap th
+{
+    font-size: 14px;
+    padding: 5px;
+    text-align: left;
+}
+
+.table-wrap th
+{
+    background: #99c27a;
+    color: #fff;
+    font-weight: 400;
+}
+
+.table-wrap td
+{
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+.table-wrap tr
+{
+    background: #fff;
+}
+
+.table-wrap tr:nth-child(2n)
+{
+    background: #f9f9f9;
+}
+
+.dynamic-expression
+{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+    .dynamic-expression .error
+    {
+        color: #e51400;
+        display: block;
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 5px 0;
+    }
+
+    .dynamic-expression .dynamic-expression_t
+    {
+        display: inline-block;
+        margin: 15px 0;
+    }
+
+    .dynamic-expression .dynamic-expression_b
+    {
+        margin: 15px 0 30px;
+        padding: 0 0 0 40px;
+    }
+
+    .dynamic-expression_b .add
+    {
+        font-size: 12px;
+    }
+
+    .dynamic-expression_b .list-item
+    {
+        font-size: 14px;
+        margin: 0 0 15px;
+    }
+
+        .dynamic-expression_b .list-link
+        {
+            color: #4c4c4c;
+        }
+
+        .dynamic-expression_b .list-ico
+        {
+            cursor: pointer;
+            margin: 0 5px 0 0;
+        }
+
+        .dynamic-expression_b .form-input,
+        .dynamic-expression_b .list-ico,
+        .dynamic-expression_b .list-descr,
+        .dynamic-expression_b .link
+        {
+            display: inline-block;
+        }
+
+        .dynamic-expression_b .form-input
+        {
+            vertical-align: middle;
+        }
+
+        .dynamic-expression_b .form-input,
+        .dynamic-expression_b .list-descr
+        {
+            margin: 0 10px;
+        }
+
+        .dynamic-expression_b .form-group
+        {
+            margin: 10px 0 0;
+        }
+
+        .dynamic-expression_b .list-descr
+        {
+            margin: 0;
+        }
+
+        .dynamic-expression_b .list.__sub
+        {
+            padding: 15px 0 0 20px;
+        }
