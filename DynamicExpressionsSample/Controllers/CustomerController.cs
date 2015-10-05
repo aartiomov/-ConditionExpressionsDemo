@@ -1,7 +1,9 @@
 ﻿using DynamicExpressionsSample.Common;
 using DynamicExpressionsSample.Conditions;
+using DynamicExpressionsSample.Core;
 using DynamicExpressionsSample.Domain.Model;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,12 +20,15 @@ namespace DynamicExpressionsSample.Controllers
     {
         // GET api/customer
         [HttpPost]
-        public IHttpActionResult Get(ConditionExpressionTree context)
+        public IHttpActionResult Get(ConditionExpressionTree conditions)
         {
+            var expression = SerializationUtil.SerializeExpression(conditions.GetConditionExpression());
             var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/customers.json");            
-            IEnumerable<Customer> customers = JsonConvert.DeserializeObject<IEnumerable<Customer>>(File.ReadAllText(path));  
+            IEnumerable<Customer> customers = JsonConvert.DeserializeObject<IEnumerable<Customer>>(File.ReadAllText(path));
+            var deserialized = SerializationUtil.DeserializeExpression<Func<IEvaluationContext, bool>>(expression);
+            var retVal = customers.Where(customer => deserialized(new EvaluationContext { CustomerGender = customer.Gender, FirstName = customer.FirstName, LastName = customer.LastName, OrdersCount = customer.OrdersCount }));
             
-            return Ok(customers);
+            return Ok(retVal);
         }
 
         /// <summary>
