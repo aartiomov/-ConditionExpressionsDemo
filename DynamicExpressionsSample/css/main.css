@@ -260,3 +260,13 @@ ul {
     .menu.__context .menu-item:hover .menu.__sub {
         display: block;
     }
+
+.form-input input.ng-invalid,
+.form-input textarea.ng-invalid,
+.ui-select-container.ng-invalid .select2-choice,
+.form-input input.ng-invalid:focus,
+.form-input textarea.ng-invalid:focus {
+    background: #fef8f7;
+    border-color: #fce7e6;
+    color: #e51400;
+}

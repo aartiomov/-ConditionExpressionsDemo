@@ -1,0 +1,74 @@
+﻿<script type="text/ng-template" id="expression-BlockConditionAndOr.html">
+    If
+    <a class="__link" left-click-menu data-target="allAny_menu{{element.Id}}">{{element.All | boolToValue:'all':'any'}}</a> of these conditions are true
+    <ul class="menu __context" role="menu" id="allAny_menu{{element.Id}}">
+        <li class="menu-item" ng-click='element.All=true;'>all</li>
+        <li class="menu-item" ng-click='element.All=false;'>any</li>
+    </ul>
+</script>
+
+<script type="text/ng-template" id="expression-ConditionAgeIs.html">
+    Shopper age is
+    <a class="__link" left-click-menu data-target="compareCondition_menu{{element1.Id}}">{{element1.CompareCondition | compareConditionToText}}</a>
+    <div class="form-input __mini __number">
+        <input smart-float num-type="integer" required ng-model="element1.Value">
+    </div>
+    <ul class="menu __context" role="menu" id="compareCondition_menu{{element1.Id}}">
+        <li class="menu-item" ng-click='element1.CompareCondition="IsMatching";'>matching</li>
+        <li class="menu-item" ng-click='element1.CompareCondition="IsNotMatching";'>not matching</li>
+        <li class="menu-item" ng-click='element1.CompareCondition="IsGreaterThan";'>greater than</li>
+        <li class="menu-item" ng-click='element1.CompareCondition="IsGreaterThanOrEqual";'>greater than or equals</li>
+        <li class="menu-item" ng-click='element1.CompareCondition="IsLessThan";'>less than</li>
+        <li class="menu-item" ng-click='element1.CompareCondition="IsLessThanOrEqual";'>less than or equals</li>
+    </ul>
+</script>
+
+<script type="text/ng-template" id="expression-ConditionGenderIs.html">
+    Shopper gender is
+    <a class="__link" left-click-menu data-target="matchString_menu{{element1.Id}}">{{element1.Value?element1.Value:'unspecified'}}</a>
+    <ul class="menu __context" role="menu" id="matchString_menu{{element1.Id}}">
+        <li class="menu-item" ng-click='element1.Value="female";'>female</li>
+        <li class="menu-item" ng-click='element1.Value="male";'>male</li>
+    </ul>
+</script>
+
+<script type="text/ng-template" id="expression-ConditionOrdersIs.html">
+    Shopper has placed 
+    <a class="__link" left-click-menu data-target="exactly_menu{{element1.Id}}">{{element1.exactly | boolToValue:'exactly':'at least'}}</a>
+    <div class="form-input __mini">
+        <input smart-float num-type="integer" required ng-model="element1.Value">
+    </div>orders
+
+    <ul class="menu __context" role="menu" id="exactly_menu{{element1.Id}}">
+        <li class="menu-item" ng-click='element1.exactly=true;'>exactly</li>
+        <li class="menu-item" ng-click='element1.exactly=false;'>at least</li>
+    </ul>
+</script>
+
+<script type="text/ng-template" id="expression-ConditionFirstNameIs.html">
+    First name is
+    <a class="__link" left-click-menu data-target="matchString_menu{{element1.Id}}">{{element1.MatchCondition | compareConditionToText}}</a>
+    <div class="form-input __mini">
+        <input required class="form-control" ng-model="element1.Value" />
+    </div>
+    <ul class="menu __context" role="menu" id="matchString_menu{{element1.Id}}">
+        <li class="menu-item" ng-click='element1.MatchCondition="Contains";'>containing</li>
+        <li class="menu-item" ng-click='element1.MatchCondition="NotContains";'>not containing</li>
+        <li class="menu-item" ng-click='element1.MatchCondition="Matching";'>matching</li>
+        <li class="menu-item" ng-click='element1.MatchCondition="NotMatching";'>not matching</li>
+    </ul>
+</script>
+
+<script type="text/ng-template" id="expression-ConditionLastNameIs.html">
+    Last name is
+    <a class="__link" left-click-menu data-target="matchString_menu{{element1.Id}}">{{element1.MatchCondition | compareConditionToText}}</a>
+    <div class="form-input __mini">
+        <input required class="form-control" ng-model="element1.Value" />
+    </div>
+    <ul class="menu __context" role="menu" id="matchString_menu{{element1.Id}}">
+        <li class="menu-item" ng-click='element1.MatchCondition="Contains";'>containing</li>
+        <li class="menu-item" ng-click='element1.MatchCondition="NotContains";'>not containing</li>
+        <li class="menu-item" ng-click='element1.MatchCondition="Matching";'>matching</li>
+        <li class="menu-item" ng-click='element1.MatchCondition="NotMatching";'>not matching</li>
+    </ul>
+</script>

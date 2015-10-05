@@ -17,7 +17,7 @@ namespace DynamicExpressionsSample.Controllers
     public class CustomerController : ApiController
     {
         // GET api/customer
-        [HttpGet]
+        [HttpPost]
         public IHttpActionResult Get(ConditionExpressionTree context)
         {
             var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/customers.json");            
