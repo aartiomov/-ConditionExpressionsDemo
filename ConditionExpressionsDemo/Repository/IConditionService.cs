@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ConditionExpressionsDemo.Repository
 {
-    interface IConditionService
+    public interface IConditionService
     {
         IEnumerable<Condition> Conditions { get; }
         void Add(Condition condition);

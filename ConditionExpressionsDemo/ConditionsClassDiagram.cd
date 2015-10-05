@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConditionExpressionsDemo.Common.ConditionExpressionTree">
+    <Position X="0.5" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ConditionExpressionTree.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.231" />
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Common.DynamicExpression">
+    <Position X="3.5" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAABAAAAQAA=</HashCode>
+      <FileName>Common\DynamicExpression.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.BlockConditionAndOr" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Conditions\BlockConditionAndOr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.CompareConditionBase&lt;T&gt;">
+    <Position X="3.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAQAAAAAAgAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Conditions\CompareConditionBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.MatchedConditionBase&lt;T&gt;">
+    <Position X="6.75" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAgAEAAAAA=</HashCode>
+      <FileName>Conditions\MatchedConditionBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionAgeIs">
+    <Position X="0.5" Y="5.75" Width="2.75" />
+    <InheritanceLine Type="ConditionExpressionsDemo.Conditions.CompareConditionBase&lt;T&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="6.312" />
+        <Point X="3.25" Y="6.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conditions\ConditionAgeIs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionFirstNameIs" Collapsed="true">
+    <Position X="9.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conditions\ConditionFirstNameIs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionLastNameIs" Collapsed="true">
+    <Position X="9.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conditions\ConditionLastNameIs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionGenderIs" Collapsed="true">
+    <Position X="9.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conditions\ConditionGenderIs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionOrdersIs">
+    <Position X="3.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAgAAAAA=</HashCode>
+      <FileName>Conditions\ConditionOrdersIs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.235" />
+  </Class>
+  <Interface Name="ConditionExpressionsDemo.Common.IConditionExpression">
+    <Position X="12.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IConditionExpression.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ConditionExpressionsDemo.Common.IDynamicExpression">
+    <Position X="12.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\IDynamicExpression.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

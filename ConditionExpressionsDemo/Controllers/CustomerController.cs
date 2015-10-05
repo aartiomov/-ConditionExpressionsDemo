@@ -14,9 +14,9 @@ namespace ConditionExpressionsDemo.Controllers
     {
         private readonly ICustomerRepository _customerRepository;
 
-        public CustomersController()
+        public CustomersController(ICustomerRepository customerRepository)
         {
-            _customerRepository = new FileCustomerRepository();
+            _customerRepository = customerRepository;
         }
 
         // POST api/customers

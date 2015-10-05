@@ -7,12 +7,19 @@ namespace ConditionExpressionsDemo.Repository
 {
     public class FileCustomerRepository : ICustomerRepository
     {
+        private IEnumerable<Customer> _customers;
+
         public IEnumerable<Customer> Customers
         {
             get
             {
-                var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/customers.json");
-                return JsonConvert.DeserializeObject<IEnumerable<Customer>>(File.ReadAllText(path));
+                if (_customers == null)
+                {
+                    var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/customers.json");
+                    _customers = JsonConvert.DeserializeObject<IEnumerable<Customer>>(File.ReadAllText(path));
+                }
+
+                return _customers;
             }
         }
     }
