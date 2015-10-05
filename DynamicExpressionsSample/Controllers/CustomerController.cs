@@ -18,7 +18,7 @@ namespace DynamicExpressionsSample.Controllers
     {
         // GET api/customer
         [HttpGet]
-        public IHttpActionResult Get(IEvaluationContext context)
+        public IHttpActionResult Get(ConditionExpressionTree context)
         {
             var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/customers.json");            
             IEnumerable<Customer> customers = JsonConvert.DeserializeObject<IEnumerable<Customer>>(File.ReadAllText(path));  
