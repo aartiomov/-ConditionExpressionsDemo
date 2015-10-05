@@ -1,11 +1,4 @@
-﻿//Call this to register our module to main application
-var moduleName = "virtoCommerce.coreModule.common";
-
-if (AppDependencies != undefined) {
-    AppDependencies.push(moduleName);
-}
-
-angular.module(moduleName, [])
+﻿angular.module("virtoCommerce.coreModule.common", [])
 .factory('virtoCommerce.coreModule.common.dynamicExpressionService', function () {
     var retVal = {
         expressions: [],
@@ -22,9 +15,6 @@ angular.module(moduleName, [])
 .directive('vaDynamicExpressionTree', function () {
     return {
         restrict: 'E',
-        //scope: {
-        //    source: '='
-        //},
         link: function ($scope, $element, $attrs) {
             $scope.addChild = function (chosenMenuElement, parentBlock) {
                 if (!parentBlock.Children) {
@@ -40,7 +30,7 @@ angular.module(moduleName, [])
                 $scope.source = newVal;
             });
         },
-        templateUrl: 'Scripts/tree/expression-tree.tpl.html'
+        templateUrl: 'Scripts/expressionCore/expression-tree.tpl.html'
     };
 })
 ;
