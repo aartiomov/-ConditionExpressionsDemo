@@ -1,17 +1,13 @@
-﻿using DynamicExpressionsSample.Common;
-using DynamicExpressionsSample.Conditions;
-using DynamicExpressionsSample.Core;
-using DynamicExpressionsSample.Domain.Model;
-using DynamicExpressionsSample.Repository;
-using Newtonsoft.Json;
+﻿using ConditionExpressionsDemo.Common;
+using ConditionExpressionsDemo.Conditions;
+using ConditionExpressionsDemo.Domain.Model;
+using ConditionExpressionsDemo.Repository;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Description;
 
-namespace DynamicExpressionsSample.Controllers
+namespace ConditionExpressionsDemo.Controllers
 {
     /// <summary>
     /// Web API Controller with get method. It returns customers.
@@ -30,18 +26,16 @@ namespace DynamicExpressionsSample.Controllers
         [HttpPost]
         public IHttpActionResult Get(ConditionExpressionTree conditions)
         {
+            //get customers from repository
             var customers = _customerRepository.Customers;
 
             if (conditions != null)
             {
-                //serialize conditions expression if there is a requirement to save it
-                var expression = SerializationUtil.SerializeExpression(conditions.GetConditionExpression());
-
-                //deserialize conditions expression
-                var deserialized = SerializationUtil.DeserializeExpression<Func<IEvaluationContext, bool>>(expression);
-
-                //get customers from repository, create context from each of the customers and pass it to the deserialized expression
-                customers = customers.Where(customer => deserialized(GetEvaulationContext(customer)));
+                //compile expression. note: you can now serialize it to save in repository
+                var compiledExpression = conditions.GetConditionExpression().Compile();
+                                
+                //filter customers: create context from customer data and pass it to the compiled expression
+                customers = customers.Where(customer => compiledExpression(GetEvaulationContext(customer)));
             }
 
             return Ok(customers);

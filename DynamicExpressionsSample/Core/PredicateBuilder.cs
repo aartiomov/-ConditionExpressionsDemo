@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace DynamicExpressionsSample.Core
+namespace ConditionExpressionsDemo.Core
 {
     /// <summary>
     /// Predicate builder class. More on PredicateBuilder read: http://www.albahari.com/nutshell/predicatebuilder.aspx

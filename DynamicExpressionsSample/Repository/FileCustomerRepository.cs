@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using DynamicExpressionsSample.Domain.Model;
+using ConditionExpressionsDemo.Domain.Model;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace DynamicExpressionsSample.Repository
+namespace ConditionExpressionsDemo.Repository
 {
     public class FileCustomerRepository : ICustomerRepository
     {

@@ -1,9 +1,9 @@
-﻿using DynamicExpressionsSample.Common;
-using DynamicExpressionsSample.Core;
+﻿using ConditionExpressionsDemo.Common;
+using ConditionExpressionsDemo.Core;
 using System;
 using System.Linq;
 
-namespace DynamicExpressionsSample.Conditions
+namespace ConditionExpressionsDemo.Conditions
 {
     /// <summary>
     /// Root and/or condition

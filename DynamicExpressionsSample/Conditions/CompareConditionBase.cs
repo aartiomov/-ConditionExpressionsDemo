@@ -1,8 +1,8 @@
-﻿using DynamicExpressionsSample.Common;
+﻿using ConditionExpressionsDemo.Common;
 using System;
 using linq = System.Linq.Expressions;
 
-namespace DynamicExpressionsSample.Conditions
+namespace ConditionExpressionsDemo.Conditions
 {
     /// <summary>
     /// Base class to create decimal values comparing conditions

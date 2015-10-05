@@ -1,9 +1,9 @@
-﻿using DynamicExpressionsSample.Core;
+﻿using ConditionExpressionsDemo.Core;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DynamicExpressionsSample.Common
+namespace ConditionExpressionsDemo.Common
 {
     public abstract class DynamicExpression : IDynamicExpression
     {

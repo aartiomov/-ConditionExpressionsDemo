@@ -1,9 +1,9 @@
 ﻿
 
-using DynamicExpressionsSample.Common;
-using DynamicExpressionsSample.Core;
+using ConditionExpressionsDemo.Common;
+using ConditionExpressionsDemo.Core;
 
-namespace DynamicExpressionsSample.Conditions
+namespace ConditionExpressionsDemo.Conditions
 {
     /// <summary>
     /// Condition to set age check

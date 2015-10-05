@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace DynamicExpressionsSample.Core
+namespace ConditionExpressionsDemo.Core
 {
     /// <summary>
     /// Helpers
@@ -14,12 +14,12 @@ namespace DynamicExpressionsSample.Core
     {
         public static IEnumerable<string> GetPropertyNames<T>(params Expression<Func<T, object>>[] propertyExpressions)
         {
-            var retVal = new List<string>();
+            var propertyNames = new List<string>();
             foreach (var propertyExpression in propertyExpressions)
             {
-                retVal.Add(GetPropertyName(propertyExpression));
+                propertyNames.Add(GetPropertyName(propertyExpression));
             }
-            return retVal;
+            return propertyNames;
         }
 
         public static string GetPropertyName<T>(Expression<Func<T, object>> propertyExpression)

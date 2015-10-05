@@ -1,8 +1,8 @@
-﻿using DynamicExpressionsSample.Core;
+﻿using ConditionExpressionsDemo.Core;
 using System;
 using System.Linq;
 
-namespace DynamicExpressionsSample.Common
+namespace ConditionExpressionsDemo.Common
 {
     public class ConditionExpressionTree : DynamicExpression, IConditionExpression
     {

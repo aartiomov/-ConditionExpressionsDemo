@@ -1,8 +1,7 @@
-﻿
-using DynamicExpressionsSample.Domain.Model;
+﻿using ConditionExpressionsDemo.Domain.Model;
 using System.Collections.Generic;
 
-namespace DynamicExpressionsSample.Repository
+namespace ConditionExpressionsDemo.Repository
 {
     public interface ICustomerRepository
     {

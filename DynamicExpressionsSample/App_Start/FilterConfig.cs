@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace DynamicExpressionsSample
+namespace ConditionExpressionsDemo
 {
     public class FilterConfig
     {

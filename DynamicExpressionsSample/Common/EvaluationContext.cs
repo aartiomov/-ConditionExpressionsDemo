@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DynamicExpressionsSample.Common
+namespace ConditionExpressionsDemo.Common
 {
     public class EvaluationContext : IEvaluationContext
     {

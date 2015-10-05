@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicExpressionsSample", "DynamicExpressionsSample\DynamicExpressionsSample.csproj", "{23E4458E-259D-4785-8C04-5E6696B8AD51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionExpressionsDemo", "DynamicExpressionsSample\ConditionExpressionsDemo.csproj", "{23E4458E-259D-4785-8C04-5E6696B8AD51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

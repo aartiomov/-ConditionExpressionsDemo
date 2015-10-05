@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace DynamicExpressionsSample.Controllers
+namespace ConditionExpressionsDemo.Controllers
 {
     public class HomeController : Controller
     {

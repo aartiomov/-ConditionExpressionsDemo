@@ -1,5 +1,5 @@
 ﻿
-namespace DynamicExpressionsSample.Common
+namespace ConditionExpressionsDemo.Common
 {
     public interface IEvaluationContext
     {

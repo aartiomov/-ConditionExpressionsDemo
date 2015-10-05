@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DynamicExpressionsSample.Common
+namespace ConditionExpressionsDemo.Common
 {
     public interface IConditionExpression
     {

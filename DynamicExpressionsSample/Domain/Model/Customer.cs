@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace DynamicExpressionsSample.Domain.Model
+namespace ConditionExpressionsDemo.Domain.Model
 {
     /// <summary>
     /// Customer model class
