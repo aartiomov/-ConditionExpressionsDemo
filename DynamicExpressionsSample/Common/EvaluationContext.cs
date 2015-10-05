@@ -26,6 +26,5 @@ namespace DynamicExpressionsSample.Common
         public virtual string LastName { get; set; }
 
         public virtual int OrdersCount { get; set; }
-                
     }
 }
