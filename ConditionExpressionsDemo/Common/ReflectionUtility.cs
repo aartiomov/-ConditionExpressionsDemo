@@ -12,16 +12,6 @@ namespace ConditionExpressionsDemo.Core
     /// </summary>
     public static class ReflectionUtility
     {
-        public static IEnumerable<string> GetPropertyNames<T>(params Expression<Func<T, object>>[] propertyExpressions)
-        {
-            var propertyNames = new List<string>();
-            foreach (var propertyExpression in propertyExpressions)
-            {
-                propertyNames.Add(GetPropertyName(propertyExpression));
-            }
-            return propertyNames;
-        }
-
         public static string GetPropertyName<T>(Expression<Func<T, object>> propertyExpression)
         {
             string retVal = null;
@@ -42,17 +32,6 @@ namespace ConditionExpressionsDemo.Core
 
             }
             return retVal;
-        }
-
-        public static PropertyInfo[] FindPropertiesWithAttribute(this Type type, Type attribute)
-        {
-            PropertyInfo[] properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
-            return properties.Where(x => x.GetCustomAttributes(attribute, true).Any()).ToArray();
-        }
-
-        public static bool IsHaveAttribute(this PropertyInfo propertyInfo, Type attribute)
-        {
-            return propertyInfo.GetCustomAttributes(attribute, true).Any();
         }
         
         public static bool IsDerivativeOf(this Type type, Type typeToCompare)

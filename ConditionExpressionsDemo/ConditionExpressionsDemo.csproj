@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExpressionSerialization">
+      <HintPath>..\Shared\ExpressionSerialization.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -136,6 +139,7 @@
     <Compile Include="Common\IConditionExpression.cs" />
     <Compile Include="Common\IDynamicExpression.cs" />
     <Compile Include="Common\IEvaluationContext.cs" />
+    <Compile Include="Common\SerializationUtil.cs" />
     <Compile Include="Conditions\BlockConditionAndOr.cs" />
     <Compile Include="Conditions\CompareConditionBase.cs" />
     <Compile Include="Conditions\ConditionOrdersIs.cs" />
@@ -144,18 +148,24 @@
     <Compile Include="Conditions\ConditionFirstNameIs.cs" />
     <Compile Include="Conditions\ConditionGenderIs.cs" />
     <Compile Include="Conditions\MatchedConditionBase.cs" />
+    <Compile Include="Controllers\ConditionsController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Core\PredicateBuilder.cs" />
-    <Compile Include="Core\ReflectionUtility.cs" />
-    <Compile Include="Core\TreeExtension.cs" />
+    <Compile Include="Converters\ConditionConverter.cs" />
+    <Compile Include="Converters\CustomerConverter.cs" />
+    <Compile Include="Common\PredicateBuilder.cs" />
+    <Compile Include="Common\ReflectionUtility.cs" />
+    <Compile Include="Common\TreeExtension.cs" />
+    <Compile Include="Domain\Model\Condition.cs" />
     <Compile Include="Domain\Model\Customer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\FileCustomerRepository.cs" />
+    <Compile Include="Repository\IConditionService.cs" />
     <Compile Include="Repository\ICustomerRepository.cs" />
+    <Compile Include="Repository\InMemoryConditionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower_components\angular-resource\angular-resource.js" />
