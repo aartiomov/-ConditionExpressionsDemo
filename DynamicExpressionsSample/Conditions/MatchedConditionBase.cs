@@ -32,6 +32,9 @@ namespace DynamicExpressionsSample.Conditions
             MethodInfo method;
             linq.Expression methodExp = null;
 
+            if (Value == null)
+                return null;
+
             if (string.Equals(MatchCondition, "Contains", StringComparison.InvariantCultureIgnoreCase))
             {
                 method = typeof(string).GetMethod("Contains", new[] { typeof(string) });

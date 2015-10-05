@@ -10,12 +10,12 @@ namespace DynamicExpressionsSample.Common
 
         public virtual System.Linq.Expressions.Expression<Func<IEvaluationContext, bool>> GetConditionExpression()
         {
-            var retVal = PredicateBuilder.True<IEvaluationContext>();
+            var predicate = PredicateBuilder.True<IEvaluationContext>();
             foreach (var expression in Children.OfType<IConditionExpression>().Select(x => x.GetConditionExpression()).Where(x => x != null))
             {
-                retVal = retVal.And(expression);
+                predicate = predicate.And(expression);
             }
-            return retVal;
+            return predicate;
         }
 
         #endregion

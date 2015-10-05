@@ -6,17 +6,17 @@ using linq = System.Linq.Expressions;
 namespace DynamicExpressionsSample.Conditions
 {
     /// <summary>
-    /// Condition to set age check
+    /// Condition to set orders count check
     /// </summary>
     public class ConditionOrdersIs : DynamicExpression, IConditionExpression
     {
-        public int NumItem { get; set; }
+        public int Value { get; set; }
 
         public bool Exactly { get; set; }
 
         #region IConditionExpression Members
         /// <summary>
-        /// ((EvaluationContext)x).OrdersCount > NumItem
+        /// ((EvaluationContext)x).OrdersCount > Value
         /// </summary>
         /// <returns></returns>
         linq.Expression<Func<IEvaluationContext, bool>> IConditionExpression.GetConditionExpression()
@@ -25,7 +25,7 @@ namespace DynamicExpressionsSample.Conditions
             var castOp = linq.Expression.MakeUnary(linq.ExpressionType.Convert, paramX, typeof(EvaluationContext));
             var propertyValue = linq.Expression.Property(castOp, typeof(EvaluationContext).GetProperty(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.OrdersCount)));
                      
-            var numItem = linq.Expression.Constant(NumItem);
+            var numItem = linq.Expression.Constant(Value);
             var binaryOp = Exactly ? linq.Expression.Equal(propertyValue, numItem) : linq.Expression.GreaterThanOrEqual(propertyValue, numItem);
 
             var retVal = linq.Expression.Lambda<Func<IEvaluationContext, bool>>(binaryOp, paramX);

@@ -12,6 +12,7 @@ namespace DynamicExpressionsSample.Conditions
             : base(ReflectionUtility.GetPropertyName<EvaluationContext>(x => x.CustomerGender))
         {
             Value = "female";
+            MatchCondition = "Matching";
         }
     }
 }
