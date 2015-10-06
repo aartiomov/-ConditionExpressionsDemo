@@ -33,10 +33,10 @@ ul {
     min-width: 100px;
 }
 
-.button::disabled {
+.button:disabled {
     opacity: .5;
     pointer-events: none;
-    
+
     filter: alpha(opacity=50);
 }
 
