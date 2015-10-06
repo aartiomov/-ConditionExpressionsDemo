@@ -162,7 +162,7 @@
     <Compile Include="Conditions\ConditionGenderIs.cs" />
     <Compile Include="Conditions\MatchedConditionBase.cs" />
     <Compile Include="Controllers\ConditionsController.cs" />
-    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Converters\ConditionConverter.cs" />
     <Compile Include="Converters\CustomerConverter.cs" />

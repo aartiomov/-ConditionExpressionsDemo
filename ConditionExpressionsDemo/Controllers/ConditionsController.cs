@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using ConditionExpressionsDemo.Converters;
 using System;
+using ConditionExpressionsDemo.Domain.Model;
 
 namespace ConditionExpressionsDemo.Controllers
 {
@@ -44,7 +45,6 @@ namespace ConditionExpressionsDemo.Controllers
 		/// Get conditions expression tree
 		/// </summary>
 		[HttpGet]
-        [ResponseType(typeof(ConditionExpressionTree))]
         [Route("all")]
         public IHttpActionResult GetConditions()
         {
@@ -68,12 +68,13 @@ namespace ConditionExpressionsDemo.Controllers
 		/// Save condition
 		/// </summary>
 		[HttpPost]
-        [ResponseType(typeof(ConditionExpressionTree))]
+        [ResponseType(typeof(Condition))]
         [Route("")]
         public IHttpActionResult SaveCondition(ConditionExpressionTree conditionTree)
         {
-            _conditionService.Add(conditionTree.ToCondition(Guid.NewGuid().ToString()));
-            return Ok();
+            var condition = conditionTree.ToCondition(Guid.NewGuid().ToString());
+            _conditionService.Add(condition);
+            return Ok(condition);
         }
     }
 }
