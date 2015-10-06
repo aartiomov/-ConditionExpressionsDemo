@@ -33,6 +33,13 @@ ul {
     min-width: 100px;
 }
 
+.button::disabled {
+    opacity: .5;
+    pointer-events: none;
+    
+    filter: alpha(opacity=50);
+}
+
 .list .list-item,
 .menu .menu-item {
     padding-bottom: 0;
