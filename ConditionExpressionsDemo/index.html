@@ -26,9 +26,9 @@
         <div class="left">
             <div class="dynamic-expression">
                 <va-dynamic-expression-tree source="dynamicExpression"></va-dynamic-expression-tree>
-                <button class="button" ng-click="refresh()" ng-disabled="formScope.$invalid">Apply</button>
-                <button class="button" ng-click="saveExpression()" ng-disabled="formScope.$invalid">Save</button>
-                <button class="button" ng-click="loadExpression()" ng-disabled="!lastExpression">Restore</button>
+                <button class="button" ng-click="refresh()" ng-disabled="formScope.$invalid || !isDirty(appliedExpression)">Apply</button>
+                <button class="button" ng-click="saveExpression()" ng-disabled="formScope.$invalid || !isDirty(savedExpression)">Save</button>
+                <button class="button" ng-click="loadExpression()" ng-disabled="!lastExpression || !isDirty(savedExpression)">Restore</button>
             </div>
         </div>
     </form>
