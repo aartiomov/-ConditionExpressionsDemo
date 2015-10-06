@@ -20,7 +20,13 @@ namespace ConditionExpressionsDemo.Controllers
         }
 
         // POST api/customers
+        /// <summary>
+        /// The method returns filtered customers depending on the passed conditions
+        /// </summary>
+        /// <param name="conditions">Conditions tree parameter</param>
+        /// <returns></returns>
         [HttpPost]
+        [Route("")]
         public IHttpActionResult CustomersByConditions(ConditionExpressionTree conditions)
         {
             //get customers from repository

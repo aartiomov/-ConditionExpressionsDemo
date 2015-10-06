@@ -32,7 +32,7 @@ namespace ConditionExpressionsDemo.Controllers
         }
 
         /// <summary>
-		/// Get conditions expression tree
+		/// Get initial conditions expression tree
 		/// </summary>
 		[HttpGet]
         [ResponseType(typeof(ConditionExpressionTree))]
@@ -43,7 +43,7 @@ namespace ConditionExpressionsDemo.Controllers
         }
 
         /// <summary>
-		/// Get conditions expression tree
+		/// Get all saved conditions
 		/// </summary>
 		[HttpGet]
         [Route("all")]
@@ -74,7 +74,10 @@ namespace ConditionExpressionsDemo.Controllers
         [Route("")]
         public IHttpActionResult SaveCondition(ConditionExpressionTree conditionTree)
         {
+            //convert passed condition tree to Condition object
             var condition = conditionTree.ToCondition(Guid.NewGuid().ToString());
+
+            //save it to the storage
             _conditionService.Add(condition);
             return Ok(condition);
         }
