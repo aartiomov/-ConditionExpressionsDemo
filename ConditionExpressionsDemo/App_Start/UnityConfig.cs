@@ -11,6 +11,7 @@ namespace ConditionExpressionsDemo
         {
 			var container = new UnityContainer();
             
+            //register customer repository and conditions service
             container.RegisterType<IConditionService, InMemoryConditionService>(new ContainerControlledLifetimeManager());
             container.RegisterType<ICustomerRepository, FileCustomerRepository>(new ContainerControlledLifetimeManager());
 

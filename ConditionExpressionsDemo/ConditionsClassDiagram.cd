@@ -26,6 +26,12 @@
   </Class>
   <Class Name="ConditionExpressionsDemo.Conditions.CompareConditionBase&lt;T&gt;">
     <Position X="3.75" Y="5.75" Width="2.25" />
+    <InheritanceLine Type="ConditionExpressionsDemo.Common.DynamicExpression" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.438" Y="5.074" />
+        <Point X="5.438" Y="5.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAQAAAAAAgAAAAAAAAQAgAAAAAAA=</HashCode>
       <FileName>Conditions\CompareConditionBase.cs</FileName>
@@ -53,22 +59,34 @@
       <FileName>Conditions\ConditionAgeIs.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ConditionExpressionsDemo.Conditions.ConditionFirstNameIs" Collapsed="true">
-    <Position X="9.75" Y="2" Width="2.25" />
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionFirstNameIs">
+    <Position X="7" Y="0.5" Width="2.75" />
+    <InheritanceLine Type="ConditionExpressionsDemo.Conditions.MatchedConditionBase&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.625" Y="2.25" />
+        <Point X="8.625" Y="1.733" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Conditions\ConditionFirstNameIs.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ConditionExpressionsDemo.Conditions.ConditionLastNameIs" Collapsed="true">
-    <Position X="9.75" Y="3" Width="2.25" />
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionLastNameIs">
+    <Position X="9.5" Y="3" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Conditions\ConditionLastNameIs.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ConditionExpressionsDemo.Conditions.ConditionGenderIs" Collapsed="true">
-    <Position X="9.75" Y="4" Width="2.25" />
+  <Class Name="ConditionExpressionsDemo.Conditions.ConditionGenderIs">
+    <Position X="6.75" Y="5.25" Width="2.75" />
+    <InheritanceLine Type="ConditionExpressionsDemo.Conditions.MatchedConditionBase&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.062" Y="4.771" />
+        <Point X="8.062" Y="5.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Conditions\ConditionGenderIs.cs</FileName>
@@ -76,6 +94,14 @@
   </Class>
   <Class Name="ConditionExpressionsDemo.Conditions.ConditionOrdersIs">
     <Position X="3.25" Y="0.5" Width="3.25" />
+    <InheritanceLine Type="ConditionExpressionsDemo.Common.DynamicExpression" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.188" Y="2.75" />
+        <Point X="5.188" Y="2.627" />
+        <Point X="5.188" Y="2.627" />
+        <Point X="5.188" Y="2.377" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAgAAAAA=</HashCode>
       <FileName>Conditions\ConditionOrdersIs.cs</FileName>
