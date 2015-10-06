@@ -8,7 +8,6 @@ using System.Web.Http.Description;
 using ConditionExpressionsDemo.Converters;
 using System;
 using ConditionExpressionsDemo.Domain.Model;
-using ConditionExpressionsDemo.Core;
 
 namespace ConditionExpressionsDemo.Controllers
 {
