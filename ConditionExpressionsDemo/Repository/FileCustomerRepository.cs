@@ -15,7 +15,7 @@ namespace ConditionExpressionsDemo.Repository
             {
                 if (_customers == null)
                 {
-                    var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/customers.json");
+                    var path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/customers.json");
                     _customers = JsonConvert.DeserializeObject<IEnumerable<Customer>>(File.ReadAllText(path));
                 }
 
